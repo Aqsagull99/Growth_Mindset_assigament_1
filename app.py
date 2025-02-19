@@ -55,7 +55,7 @@ st.write("This interactive app helps you embrace challenges, track progress, and
 # Add a bus image
 st.image("https://images.unsplash.com/photo-1509822929063-6b6cfc9b42f2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80", 
          caption="Keep moving forward on your growth journey!", 
-         use_column_width=True)
+         use_container_width=True)
 
 # Sidebar for user input
 with st.sidebar:
