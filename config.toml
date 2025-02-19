@@ -1,0 +1,11 @@
+[theme]
+base="dark"
+primaryColor="#2e86c1"
+backgroundColor="#1b1b1b"
+secondaryBackgroundColor="#ecf0f1"  # Sidebar Light Color
+textColor="white"
+font="sans serif"
+
+
+
+
