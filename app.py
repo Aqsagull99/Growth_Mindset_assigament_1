@@ -28,7 +28,6 @@ st.markdown("""
         font-family: 'Arial', sans-serif;
         font-weight: bold;
         color: #E5E5E5 !important;
-        
         padding: 10px;
         border-radius: 5px;
 
