@@ -45,7 +45,7 @@ st.markdown("""
         transform: scale(1.05);
     }
     .stSidebar {
-        background-color: #ecf0f1;
+        background-color: #000000;
         padding: 1rem;
         border-radius: 10px;
     }
