@@ -61,6 +61,33 @@ st.markdown("""
         font-size: 32px;
         font-weight: bold;
     }
+
+    /* Input Labels Styling */
+    label {
+        color: #ff6347 !important;
+        font-size: 16px;
+        font-weight: bold;
+        
+
+    }
+
+    .custom-message {
+        color: #ff9900; /* Orange color */
+        font-size: 18px;
+        font-style: italic;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .custom-success {
+        color: #155724;  /* Dark green text */
+        background-color: #d4edda; /* Light green background */
+        padding: 10px;
+        border-radius: 5px;
+        font-weight: bold;
+        text-align: center;
+    }
     
     </style>
     """, unsafe_allow_html=True)
@@ -81,17 +108,21 @@ st.image("https://images.unsplash.com/photo-1509822929063-6b6cfc9b42f2?ixlib=rb-
 # Sidebar for user input
 with st.sidebar:
     st.markdown("<div class='stSidebar'>", unsafe_allow_html=True)
-    # st.header("Your Growth Journey")
+    
     st.markdown('<h1 class="custom-header">Your Growth Journey</h1>', unsafe_allow_html=True)
 
     name = st.text_input("Enter your name:", placeholder="e.g., John Doe")
     goal = st.text_area("What is your learning goal for today?", placeholder="Write your goal here...")
+
+   
     if st.button("Submit"):
         st.session_state.name = name
         st.session_state.goal = goal
         st.success("Data submitted successfully!")
-    st.write("💡 *Remember: Every step forward is progress!*")
-    st.markdown("</div>", unsafe_allow_html=True)
+   
+        st.markdown('<p class="custom-message">💡 Remember: Every step forward is progress!</p>', unsafe_allow_html=True)
+
+        st.markdown("</div>", unsafe_allow_html=True)
 
 # Main Content
 st.header("Why Adopt a Growth Mindset?")
@@ -133,6 +164,8 @@ if st.button("Start Your Growth Journey"):
 # Footer
 st.markdown("---")
 st.markdown("**Built with ❤️ using Streamlit** | [Learn more about Growth Mindset](https://www.mindsetworks.com/science/)")
+
+
 
 
 
