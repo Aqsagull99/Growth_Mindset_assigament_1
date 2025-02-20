@@ -1,4 +1,3 @@
-
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -24,14 +23,20 @@ st.markdown("""
         border-radius: 12px;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     }
-    h1, h2 {
+    h1{
         font-family: 'Arial', sans-serif;
         font-weight: bold;
-        color: #E5E5E5 !important;
         padding: 10px;
         border-radius: 5px;
+     }
 
-    }
+   h2 {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+   
+}
     .stButton>button {
         background-color: #ac3f7a;
         color: white;
@@ -50,10 +55,18 @@ st.markdown("""
         border-radius: 10px;
     }
     
-    
+    .custom-header {
+        color: #ff6347 !important;
+        text-align: center;
+        font-size: 32px;
+        font-weight: bold;
+    }
     
     </style>
     """, unsafe_allow_html=True)
+
+    
+
 
 # App title and introduction
 st.title("🌱 Growth Mindset Challenge")
@@ -68,7 +81,9 @@ st.image("https://images.unsplash.com/photo-1509822929063-6b6cfc9b42f2?ixlib=rb-
 # Sidebar for user input
 with st.sidebar:
     st.markdown("<div class='stSidebar'>", unsafe_allow_html=True)
-    st.header("Your Growth Journey")
+    # st.header("Your Growth Journey")
+    st.markdown('<h1 class="custom-header">Your Growth Journey</h1>', unsafe_allow_html=True)
+
     name = st.text_input("Enter your name:", placeholder="e.g., John Doe")
     goal = st.text_area("What is your learning goal for today?", placeholder="Write your goal here...")
     if st.button("Submit"):
@@ -118,4 +133,6 @@ if st.button("Start Your Growth Journey"):
 # Footer
 st.markdown("---")
 st.markdown("**Built with ❤️ using Streamlit** | [Learn more about Growth Mindset](https://www.mindsetworks.com/science/)")
+
+
 
