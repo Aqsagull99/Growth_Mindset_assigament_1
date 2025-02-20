@@ -1,3 +1,4 @@
+
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -118,6 +119,4 @@ if st.button("Start Your Growth Journey"):
 # Footer
 st.markdown("---")
 st.markdown("**Built with ❤️ using Streamlit** | [Learn more about Growth Mindset](https://www.mindsetworks.com/science/)")
-
-
 
